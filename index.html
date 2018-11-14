@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <title>RPG</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+</head>
+
+<body id="corps">
+    <div id="creation">
+        <div id="textcrea">JOUEUR, CRÉE TON PERSONNAGE !</div>
+        <img id="caracter" src="img/character.png">
+        <div id="persocaracter">
+            <div id="champ">
+                <input id="persoNom" type="text" placeholder="Quel est ton nom, voyageur?">
+                <button id="btndemarrage">Démarrer la partie</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="caracteristique">
+        <h1>Caractéristiques</h1>
+        <img src="img/character.png" id="caracterphoto">
+        <input type="text" id="nom" value="" readonly>
+        <p>Force : <input type="text" id="force" value="" readonly></p>
+        <p>Agilité : <input type="text" id="agilite" value="" readonly></p>
+        <p>Endurance : <input type="text" id="endurance" value="" readonly></p>
+        <p>Vie : <input type="text" id="vie" value="" readonly></p>
+        <p>Or : <input type="text" id="or" value="" readonly></p>
+    </div>
+
+    <div id="aventure">
+        <h1 id="titrecombat"></h1>
+        Vie du personnage : <input type="text" id="Pvie" value="" readonly></p>
+        Vie du monstre : <input type="text" id="Mvie" value="" readonly></p>
+        <button id="btnattaquer">Attaquer !</button>
+        <div id="win">
+            <p>Vous avez remporté ce combat.</p>
+            <button id="btnboutique">Aller à la boutique</button>
+        </div>
+        <div id="imgcombat">
+        </div>
+    </div>
+
+    <div id="boutique">
+        <h1>Boutique</h1>
+        <img id="btnPoFo" src="img/potion.png">
+        <p>Potion de force -2PO</p>
+        <img id="btnPoAg" src="img/potion2.png">
+        <p>Potion de Scrum -2PO</p>
+        <img id="btnPoEn" src="img/potion3.png">
+        <p>Potion d'endurance -2PO</p>
+        <img id="btnPoVi" src="img/potion4.png">
+        <p>Potion de Vie -5PO</p>
+        <img id="btninventaire" src="img/porte.png">
+        <p>Quitter la boutique</p>
+    </div>
+
+    <div id="inventaire">
+        <h1>Inventaire</h1>
+        <div id='potion1'>
+            Potion de force :
+            <input type="text" id="nbPoFo" value="" readonly></p>
+            <img src="img/potion.png" id="UtilPoFo">
+        </div>
+        <div id='potion2'>
+            Potion de Scrum :
+            <input type="text" id="nbPoAg" value="" readonly></p>
+            <img src="img/potion2.png" id="UtilPoAg">
+        </div>
+        <div id='potion3'>
+            Potion d'endurance :
+            <input type="text" id="nbPoEn" value="" readonly></p>
+            <img src="img/potion3.png" id="UtilPoEn">
+        </div>
+        <div id='potion4'>
+            Potion de vie :
+            <input type="text" id="nbPoVi" value="" readonly></p>
+            <img src="img/potion4.png" id="UtilPoVi">
+        </div>
+        <img id="btncombat" src="img/porte.png">
+    </div>
+
+
+    <div id="tabScore">
+        <h1>Leaderboard</h1>
+        <ul id="tableau">
+
+        </ul>
+    </div>
+
+
+    <script src="script/script.js"></script>
+
+
+</body>
+
+</html>
